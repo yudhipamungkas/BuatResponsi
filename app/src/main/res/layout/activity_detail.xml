@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_detail"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_below="@id/image_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/nama_detail"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Pecel Lele"
+            android:textSize="20dp"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/desc_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pecel pake lele"
+            android:layout_below="@id/nama_detail"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/harga_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/nama_detail"
+            android:text="15000"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
